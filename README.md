@@ -1,2 +1,6 @@
-# wb_cruisecontrol
- Cruise Control FiveM Script
+# wb_cruiseControl
+Simple cruise control for fivem standalone
+
+You can change all the notifications languages
+
+You have a little configuration for the commands and for km or mph

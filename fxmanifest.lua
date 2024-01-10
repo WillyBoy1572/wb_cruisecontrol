@@ -2,7 +2,10 @@ fx_version 'cerulean'
 lua54 'yes'
 game 'gta5'
 
-author 'WillyBoy'
+name         'wb_cruisecontrol'
+author       'WillyBoy'
+version      '1.0.0'
+repository   'https://github.com/WillyBoy1572/wb_cruisecontrol'
 
 version '1.1'
 

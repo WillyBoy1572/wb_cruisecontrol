@@ -2,7 +2,7 @@ fx_version 'cerulean'
 lua54 'yes'
 game 'gta5'
 
-author 'Puntzi'
+author 'WillyBoy'
 
 version '1.1'
 

@@ -9,9 +9,9 @@ end
 if Config.Command then
     RegisterNetEvent('wd_cruiseControl:cruiserCar')
     AddEventHandler('wd_cruiseControl:cruiserCar', function(cruiserSpeed, cruiserNotification)
-        local ped = PlayerPedId() -- Ped
-        local inVehicle = IsPedSittingInAnyVehicle(ped) -- Get if ped is in any vehicle
-        local vehicle = GetVehiclePedIsIn(ped, false) -- Get Vehicle In
+        local ped = PlayerPedId()
+        local inVehicle = IsPedSittingInAnyVehicle(ped)
+        local vehicle = GetVehiclePedIsIn(ped, false)
 
         Wait(250)
 
@@ -45,9 +45,9 @@ if Config.Command then
 
     RegisterCommand(Config.OffCruiseCommand, function()
         local ped = PlayerPedId() -- Ped
-        local inVehicle = IsPedSittingInAnyVehicle(ped) -- Get if ped is in any vehicle
-        local vehicle = GetVehiclePedIsIn(ped, false) -- Get Vehicle In
-        local maxSpeed = GetVehicleHandlingFloat(vehicle,"CHandlingData","fInitialDriveMaxFlatVel") -- Get max speed to reset
+        local inVehicle = IsPedSittingInAnyVehicle(ped)
+        local vehicle = GetVehiclePedIsIn(ped, false)
+        local maxSpeed = GetVehicleHandlingFloat(vehicle,"CHandlingData","fInitialDriveMaxFlatVel")
 
         Wait(250)
 
@@ -85,10 +85,10 @@ if Config.KeyMap then
 
     RegisterCommand("+activatecruiser", function()
         local ped = PlayerPedId() -- Ped
-        local inVehicle = IsPedSittingInAnyVehicle(ped) -- Get if ped is in any vehicle
-        local vehicle = GetVehiclePedIsIn(ped, false) -- Get Vehicle In
-        local maxSpeed = GetVehicleHandlingFloat(vehicle,"CHandlingData","fInitialDriveMaxFlatVel") -- Get max speed to reset
-        local cruiserSpeed = GetEntitySpeed(vehicle) -- Get the current speed
+        local inVehicle = IsPedSittingInAnyVehicle(ped)
+        local vehicle = GetVehiclePedIsIn(ped, false)
+        local maxSpeed = GetVehicleHandlingFloat(vehicle,"CHandlingData","fInitialDriveMaxFlatVel")
+        local cruiserSpeed = GetEntitySpeed(vehicle)
 
         Wait(250)
 
